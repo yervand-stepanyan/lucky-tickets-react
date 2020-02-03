@@ -6,13 +6,32 @@ export default class Input extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      isDisabled: false
+    };
   }
+
+  onInputChange = event => {
+    this.props.onInputChange(event.target.value);
+  };
+
+  onEnter = e => {
+    if (e.key === 'Enter') {
+      this.props.onInputClick();
+    }
+  };
 
   render() {
     return (
       <div className="inputMainDiv">
-        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+        <TextField
+          disabled={this.state.isDisabled}
+          id="outlined-basic"
+          label="Ticket Number Length"
+          variant="outlined"
+          onChange={this.onInputChange}
+          onKeyDown={e => this.onEnter(e)}
+        />
       </div>
     );
   }

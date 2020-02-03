@@ -1,0 +1,22 @@
+.mainDiv {
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputWrapper {
+    margin-top: 30px;
+}
+
+.radioWrapper {
+    margin-top: 10px;
+}
+
+.buttonWrapper {
+    margin-top: 30px;
+}
+
+.textWrapper {
+    margin-top: 30px;
+}
