@@ -3,14 +3,6 @@ import './input.css';
 import TextField from '@material-ui/core/TextField';
 
 export default class Input extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      isDisabled: false
-    };
-  }
-
   onInputChange = event => {
     this.props.onInputChange(event.target.value);
   };
@@ -25,7 +17,6 @@ export default class Input extends React.Component {
     return (
       <div className="inputMainDiv">
         <TextField
-          disabled={this.state.isDisabled}
           id="outlined-basic"
           label="Ticket Number Length"
           variant="outlined"

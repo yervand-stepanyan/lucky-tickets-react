@@ -24,8 +24,7 @@ export default class LuckyTickets extends React.Component {
       ticketNumLength: 0,
       radioValue: VARIABLES.radio1,
       luckyTicketsCount: 0,
-      error: '',
-      isDisabled: false
+      error: ''
     };
   }
 
@@ -38,7 +37,7 @@ export default class LuckyTickets extends React.Component {
   };
 
   checkTickets = () => {
-    this.setState({ luckyTicketsCount: 0, error: '', isDisabled: true });
+    this.setState({ luckyTicketsCount: 0, error: '' });
 
     this.getLuckyTickets(this.state.ticketNumLength);
   };
@@ -90,8 +89,6 @@ export default class LuckyTickets extends React.Component {
         }
       }
     }
-
-    this.setState({ isDisabled: false });
   };
 
   generateTicketNumber = n => {
@@ -137,8 +134,7 @@ export default class LuckyTickets extends React.Component {
       radioValue,
       ticketNumLength,
       luckyTicketsCount,
-      error,
-      isDisabled
+      error
     } = this.state;
 
     return (
@@ -180,7 +176,6 @@ export default class LuckyTickets extends React.Component {
         </div>
         <div className="buttonWrapper">
           <Button
-            disabled={isDisabled}
             variant="contained"
             color="primary"
             size="large"
