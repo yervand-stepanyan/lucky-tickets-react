@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/lucky-tickets-react/static/css/main.7d290ee2.chunk.css",
+    "main.js": "/lucky-tickets-react/static/js/main.83a19ac1.chunk.js",
+    "main.js.map": "/lucky-tickets-react/static/js/main.83a19ac1.chunk.js.map",
+    "runtime-main.js": "/lucky-tickets-react/static/js/runtime-main.bf7660db.js",
+    "runtime-main.js.map": "/lucky-tickets-react/static/js/runtime-main.bf7660db.js.map",
+    "static/js/2.ca6f4ebc.chunk.js": "/lucky-tickets-react/static/js/2.ca6f4ebc.chunk.js",
+    "static/js/2.ca6f4ebc.chunk.js.map": "/lucky-tickets-react/static/js/2.ca6f4ebc.chunk.js.map",
+    "index.html": "/lucky-tickets-react/index.html",
+    "precache-manifest.ff0197ffc1937c46d09ad1d68c8423ff.js": "/lucky-tickets-react/precache-manifest.ff0197ffc1937c46d09ad1d68c8423ff.js",
+    "service-worker.js": "/lucky-tickets-react/service-worker.js",
+    "static/css/main.7d290ee2.chunk.css.map": "/lucky-tickets-react/static/css/main.7d290ee2.chunk.css.map",
+    "static/js/2.ca6f4ebc.chunk.js.LICENSE.txt": "/lucky-tickets-react/static/js/2.ca6f4ebc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bf7660db.js",
+    "static/js/2.ca6f4ebc.chunk.js",
+    "static/css/main.7d290ee2.chunk.css",
+    "static/js/main.83a19ac1.chunk.js"
+  ]
+}
