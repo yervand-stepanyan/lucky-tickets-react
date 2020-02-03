@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/lucky-tickets-react/static/css/main.0dc05979.chunk.css",
-    "main.js": "/lucky-tickets-react/static/js/main.83a19ac1.chunk.js",
-    "main.js.map": "/lucky-tickets-react/static/js/main.83a19ac1.chunk.js.map",
+    "main.css": "/lucky-tickets-react/static/css/main.9fd0746e.chunk.css",
+    "main.js": "/lucky-tickets-react/static/js/main.9be68700.chunk.js",
+    "main.js.map": "/lucky-tickets-react/static/js/main.9be68700.chunk.js.map",
     "runtime-main.js": "/lucky-tickets-react/static/js/runtime-main.bf7660db.js",
     "runtime-main.js.map": "/lucky-tickets-react/static/js/runtime-main.bf7660db.js.map",
     "static/js/2.ca6f4ebc.chunk.js": "/lucky-tickets-react/static/js/2.ca6f4ebc.chunk.js",
     "static/js/2.ca6f4ebc.chunk.js.map": "/lucky-tickets-react/static/js/2.ca6f4ebc.chunk.js.map",
     "index.html": "/lucky-tickets-react/index.html",
-    "precache-manifest.fb6d7a5ee20c276c2d60ca99811f1939.js": "/lucky-tickets-react/precache-manifest.fb6d7a5ee20c276c2d60ca99811f1939.js",
+    "precache-manifest.d8b30d3dbf3026366773bee9fd616f12.js": "/lucky-tickets-react/precache-manifest.d8b30d3dbf3026366773bee9fd616f12.js",
     "service-worker.js": "/lucky-tickets-react/service-worker.js",
-    "static/css/main.0dc05979.chunk.css.map": "/lucky-tickets-react/static/css/main.0dc05979.chunk.css.map",
+    "static/css/main.9fd0746e.chunk.css.map": "/lucky-tickets-react/static/css/main.9fd0746e.chunk.css.map",
     "static/js/2.ca6f4ebc.chunk.js.LICENSE.txt": "/lucky-tickets-react/static/js/2.ca6f4ebc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bf7660db.js",
     "static/js/2.ca6f4ebc.chunk.js",
-    "static/css/main.0dc05979.chunk.css",
-    "static/js/main.83a19ac1.chunk.js"
+    "static/css/main.9fd0746e.chunk.css",
+    "static/js/main.9be68700.chunk.js"
   ]
 }
