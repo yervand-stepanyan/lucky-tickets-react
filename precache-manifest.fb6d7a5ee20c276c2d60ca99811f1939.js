@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a610e767097d2b8845afdba7a40671cd",
+    "revision": "723be58c7cb81351e0bf3991520131cf",
     "url": "/lucky-tickets-react/index.html"
   },
   {
-    "revision": "5a92987990035fb3f0fb",
-    "url": "/lucky-tickets-react/static/css/main.7d290ee2.chunk.css"
+    "revision": "973c2f7eec632fe93e99",
+    "url": "/lucky-tickets-react/static/css/main.0dc05979.chunk.css"
   },
   {
     "revision": "ca2d6882ff8c0b085767",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lucky-tickets-react/static/js/2.ca6f4ebc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5a92987990035fb3f0fb",
+    "revision": "973c2f7eec632fe93e99",
     "url": "/lucky-tickets-react/static/js/main.83a19ac1.chunk.js"
   },
   {

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lucky-tickets-react/precache-manifest.ff0197ffc1937c46d09ad1d68c8423ff.js"
+  "/lucky-tickets-react/precache-manifest.fb6d7a5ee20c276c2d60ca99811f1939.js"
 );
 
 self.addEventListener('message', (event) => {
