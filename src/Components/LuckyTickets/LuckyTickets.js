@@ -23,7 +23,9 @@ export default class LuckyTickets extends React.Component {
       ticketNumLength: 0,
       radioValue: VARIABLES.radio1,
       luckyTicketsCount: 0,
-      error: ''
+      error: '',
+      luckyTickets: [],
+      luckyTicketToShow: ''
     };
   }
 
@@ -36,7 +38,12 @@ export default class LuckyTickets extends React.Component {
   };
 
   checkTickets = () => {
-    this.setState({ luckyTicketsCount: 0, error: '' });
+    this.setState({
+      luckyTicketsCount: 0,
+      error: '',
+      luckyTickets: [],
+      luckyTicketToShow: ''
+    });
 
     this.getLuckyTickets(this.state.ticketNumLength);
   };
@@ -51,6 +58,9 @@ export default class LuckyTickets extends React.Component {
         error: `Invalid argument!!! "n" should be between 2 and 100!`
       });
     } else {
+      let luckyTickets = [];
+      let luckyTicketsCount = 0;
+
       const ticketNumStr = this.generateTicketNumber(n);
 
       const initialNumber = +ticketNumStr;
@@ -82,11 +92,15 @@ export default class LuckyTickets extends React.Component {
           .reduce((acc, next) => acc + Number(next), 0);
 
         if (firstPartSum === secondPartSum) {
-          this.setState(state => ({
-            luckyTicketsCount: state.luckyTicketsCount + 1
-          }));
+          const luckyTicket = firstPartStr + secondPartStr;
+
+          luckyTicketsCount += 1;
+
+          luckyTickets.push(luckyTicket);
         }
       }
+
+      this.setState({ luckyTicketsCount, luckyTickets });
     }
   };
 
@@ -128,12 +142,23 @@ export default class LuckyTickets extends React.Component {
     this.checkTickets();
   };
 
+  handleShowRandom = () => {
+    const randomNumber = Math.floor(
+      Math.random() * this.state.luckyTickets.length
+    );
+
+    this.setState(state => ({
+      luckyTicketToShow: state.luckyTickets[randomNumber]
+    }));
+  };
+
   render() {
     const {
       radioValue,
       ticketNumLength,
       luckyTicketsCount,
-      error
+      error,
+      luckyTicketToShow
     } = this.state;
 
     return (
@@ -193,6 +218,25 @@ export default class LuckyTickets extends React.Component {
               : luckyTicketsCount
               ? `Lucky Tickets: ${luckyTicketsCount}`
               : ''}
+          </Typography>
+        </div>
+        <div className="randomButtonWrapper">
+          {luckyTicketsCount ? (
+            <Button
+              variant="contained"
+              color="primary"
+              size="large"
+              onClick={this.handleShowRandom}
+            >
+              Show a random Lucky Ticket
+            </Button>
+          ) : (
+            ''
+          )}
+        </div>
+        <div className="textWrapper">
+          <Typography align="center" color="secondary" variant="h3">
+            {luckyTicketToShow ? luckyTicketToShow : ''}
           </Typography>
         </div>
       </div>
