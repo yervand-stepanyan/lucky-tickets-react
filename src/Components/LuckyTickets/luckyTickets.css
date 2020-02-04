@@ -1,6 +1,6 @@
 .mainDiv {
     display: flex;
-    padding-top: 30px;
+    padding-top: 0;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
@@ -9,9 +9,19 @@
 }
 
 .inputWrapper, .buttonWrapper, .textWrapper, .randomButtonWrapper {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .radioWrapper {
     margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .mainDiv {
+        padding-top: 30px;
+    }
+
+    .inputWrapper, .buttonWrapper, .textWrapper, .randomButtonWrapper {
+        margin-top: 30px;
+    }
 }
