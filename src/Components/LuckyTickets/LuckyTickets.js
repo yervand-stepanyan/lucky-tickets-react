@@ -11,8 +11,8 @@ import FormControl from '@material-ui/core/FormControl';
 
 const VARIABLES = {
   title: 'Enter the length of the Ticket Number!',
-  radio1: 'All 0 not included',
-  radio2: 'All 0 included'
+  radio1: `Start from "000001"`,
+  radio2: `Start from "000000"`
 };
 
 export default class LuckyTickets extends React.Component {
