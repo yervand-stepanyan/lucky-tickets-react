@@ -10,6 +10,7 @@ export default class Input extends React.Component {
   onEnter = e => {
     if (e.key === 'Enter') {
       this.props.onInputClick();
+      e.target.blur();
     }
   };
 

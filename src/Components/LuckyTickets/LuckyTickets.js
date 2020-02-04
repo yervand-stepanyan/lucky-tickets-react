@@ -25,7 +25,8 @@ export default class LuckyTickets extends React.Component {
       luckyTicketsCount: 0,
       error: '',
       luckyTickets: [],
-      luckyTicketToShow: ''
+      luckyTicketToShow: '',
+      timeUsed: ''
     };
   }
 
@@ -44,16 +45,19 @@ export default class LuckyTickets extends React.Component {
       luckyTicketsCount: 0,
       error: '',
       luckyTickets: [],
-      luckyTicketToShow: ''
+      luckyTicketToShow: '',
+      timeUsed: ''
     });
 
     this.getLuckyTickets(this.state.ticketNumLength);
 
     console.timeEnd('Time used');
     const end = new Date();
+    const timeUsedInSeconds = (end - start) / 1000;
+    this.setState({ timeUsed: `${timeUsedInSeconds} seconds` });
 
     console.log('Milliseconds used:', end - start);
-    console.log(`${(end - start) / 1000} seconds`);
+    console.log(`${timeUsedInSeconds} seconds`);
   };
 
   getLuckyTickets = n => {
@@ -166,7 +170,8 @@ export default class LuckyTickets extends React.Component {
       ticketNumLength,
       luckyTicketsCount,
       error,
-      luckyTicketToShow
+      luckyTicketToShow,
+      timeUsed
     } = this.state;
 
     return (
@@ -217,6 +222,9 @@ export default class LuckyTickets extends React.Component {
           </Button>
         </div>
         <div className="textWrapper">
+          <Typography align="center" color="secondary" variant="subtitle1">
+            {luckyTicketsCount ? `Time used: ${timeUsed}` : ''}
+          </Typography>
           <Typography align="center" color="textSecondary" variant="h5">
             {luckyTicketsCount ? `n: ${ticketNumLength}` : ''}
           </Typography>
