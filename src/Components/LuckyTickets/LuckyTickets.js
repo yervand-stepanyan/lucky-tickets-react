@@ -38,6 +38,7 @@ export default class LuckyTickets extends React.Component {
   };
 
   checkTickets = () => {
+    console.time('Time used');
     this.setState({
       luckyTicketsCount: 0,
       error: '',
@@ -46,6 +47,8 @@ export default class LuckyTickets extends React.Component {
     });
 
     this.getLuckyTickets(this.state.ticketNumLength);
+
+    console.timeEnd('Time used');
   };
 
   getLuckyTickets = n => {
