@@ -157,9 +157,18 @@ export default class LuckyTickets extends React.Component {
       Math.random() * this.state.luckyTickets.length
     );
 
-    this.setState(state => ({
-      luckyTicketToShow: state.luckyTickets[randomNumber]
-    }));
+    this.setState(
+      state => ({
+        luckyTicketToShow: state.luckyTickets[randomNumber]
+      }),
+      () => {
+        if (this.luckyTicketNode) {
+          this.luckyTicketNode.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }
+    );
   };
 
   render() {
@@ -248,7 +257,10 @@ export default class LuckyTickets extends React.Component {
             ''
           )}
         </div>
-        <div className="textWrapper">
+        <div
+          className="textWrapper"
+          ref={node => (this.luckyTicketNode = node)}
+        >
           <Typography align="center" color="secondary" variant="h3">
             {luckyTicketToShow ? luckyTicketToShow : ''}
           </Typography>
