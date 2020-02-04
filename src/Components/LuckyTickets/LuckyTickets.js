@@ -63,11 +63,11 @@ export default class LuckyTickets extends React.Component {
 
       const ticketNumStr = this.generateTicketNumber(n);
 
-      const initialNumber = +ticketNumStr;
+      const firstNumber = +ticketNumStr;
 
       const lastNumber = this.generateLastNumber(n);
 
-      for (let i = initialNumber; i <= lastNumber; i++) {
+      for (let i = firstNumber; i <= lastNumber; i++) {
         const numAsStr = '' + i;
         let ticketNumToCheck = '';
 
