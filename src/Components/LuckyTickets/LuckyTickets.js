@@ -107,6 +107,7 @@ export default class LuckyTickets extends React.Component {
           luckyTicketsCount += 1;
 
           luckyTickets.push(luckyTicket);
+
           i += 8;
         }
       }
